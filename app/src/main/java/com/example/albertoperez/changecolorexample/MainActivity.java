@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 switch (arg2) {
                     case 0:
+
                         sharedPreferences.edit().putInt("Theme", 2).apply();
                         finish();
                         startActivity(getIntent());
